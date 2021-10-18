@@ -1,6 +1,6 @@
 ---
 title: Something
-layout: base.njk
+layout: base
 ---
 
 # Hello, world

@@ -1,6 +1,6 @@
 ---
 title: About
-layout: base.njk
+layout: base
 ---
 
 <h1>About</h1>

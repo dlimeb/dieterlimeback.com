@@ -1,7 +1,6 @@
 ---
 title: Something
 layout: default.njk
-permalink: /
 ---
 
 # Hello, world

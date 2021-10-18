@@ -1,6 +1,8 @@
 const htmlmin = require('html-minifier');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
+const typesetPlugin = require('eleventy-plugin-typeset');
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -20,6 +22,10 @@ module.exports = function(eleventyConfig) {
 
   // Lint for inclusive language
   eleventyConfig.addPlugin(inclusiveLangPlugin);
+
+  // Nicer typography
+  eleventyConfig.addPlugin(typesetPlugin());
+
 
   if (process.env.ELEVENTY_ENV === 'production') {
     eleventyConfig.addTransform('htmlmin', (content, outputPath) => {

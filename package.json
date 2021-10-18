@@ -53,5 +53,7 @@
     "webpack-cli": "3.3.12",
     "webpack-merge": "5.1.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset"
+  }
 }

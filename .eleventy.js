@@ -1,5 +1,6 @@
 const htmlmin = require('html-minifier');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -16,6 +17,9 @@ module.exports = function(eleventyConfig) {
 
   // Generate Atom XML feed
   eleventyConfig.addPlugin(pluginRss);
+
+  // Lint for inclusive language
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   if (process.env.ELEVENTY_ENV === 'production') {
     eleventyConfig.addTransform('htmlmin', (content, outputPath) => {

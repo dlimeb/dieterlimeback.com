@@ -1,10 +1,10 @@
 ---
 title: Something
-layout: default.njk
+layout: base.njk
 ---
 
 # Hello, world
 
 Welcome to my website.
 
-[About](/about/)
+[About](/about/) • [Articles](/articles/)

@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" href="/images/favicon.png" />
   </head>
   <body>
-    <main>
+    <a class="sr-only" href="#main">Skip to content</a>
+    <main id="main">
       {{ content | safe }}
     </main>
     <script src="/assets/vendor.js?<%- cacheBust.vendorJs %>"></script>

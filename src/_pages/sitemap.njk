@@ -8,7 +8,7 @@ hidden: true
 {%- if not page.data.hidden %}
     <url>
         <loc>{{ site.url }}{{ page.url | url }}</loc>
-        <lastmod>{{ page.date }}</lastmod>
+        <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>
     </url>
 {%- endif %}
 {%- endfor %}

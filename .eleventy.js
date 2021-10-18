@@ -1,4 +1,5 @@
 const htmlmin = require('html-minifier');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -12,6 +13,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/compiled-assets': 'assets' });
   // Copy all images
   eleventyConfig.addPassthroughCopy('src/images');
+
+  // Generate Atom XML feed
+  eleventyConfig.addPlugin(pluginRss);
 
   if (process.env.ELEVENTY_ENV === 'production') {
     eleventyConfig.addTransform('htmlmin', (content, outputPath) => {

@@ -1,27 +1,28 @@
-/*===============================================================*/
-/*                                                               */
-/*  TYPOGRAPHY                                                   */
-/*                                                               */
-/*===============================================================*/
+/*-------------------------------------------------------------------------------
+
+    TYPOGRAPHY
+
+-------------------------------------------------------------------------------*/
+
+/**
+ * BASE TYPOGRAPHY
+ * Defaults for font definition, sizing, etc
+ */
+body {
+  color: var(--text-color);
+}
 
 
-/*-----------*/
-/*  TYPESET  */
-/*-----------*/
-// These are the classnames provided by https://github.com/davidmerfield/Typeset
-
-/*
- Small Capitals
- https://en.wikipedia.org/wiki/Small_caps 
-*/
+/**
+ * TYPESET
+ * Styling for classnames provided by https://github.com/davidmerfield/Typeset
+ */
+// Small capitals
 .small-caps {
   font-variant: small-caps;
 }
 
-/*
- Optical margin alignment for particular letters 
- https://en.wikipedia.org/wiki/Optical_margin_alignment
-*/
+// Optical margin alignment for particular letters
 .pull-T,
 .pull-V,
 .pull-W,
@@ -45,7 +46,7 @@
 .push-o,
 .push-c {
   margin-right: 0.04em;
-}  
+}
 .pull-A {
   margin-left: -0.03em;
 }
@@ -53,11 +54,7 @@
   margin-right: 0.03em;
 }
 
-/* 
- Quotation mark 
- https://en.wikipedia.org/wiki/Quotation_mark) 
-*/
-/* Single quotation marks (') */
+// Quotation marks
 .pull-single {
   margin-left:-.27em;
 }
@@ -70,8 +67,6 @@
 .push-single {
   display: inline-block;
 }
-
-/* Double quotation marks (") */
 .pull-double {
   margin-left:-.46em;
 }

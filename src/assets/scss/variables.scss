@@ -1,0 +1,27 @@
+/*-------------------------------------------------------------------------------
+
+    VARIABLES
+
+-------------------------------------------------------------------------------*/
+
+
+:root {
+
+  // Typography
+  --font-serif: serif;
+  --font-mono: monospaced;
+
+  // Colour palette
+  --color-black: black;
+  --color-white: white;
+
+  // Light/dark mode
+  @media (prefers-color-scheme: light) {
+    --background-color: var(--color-white);
+    --text-color: var(--color-black);
+  }
+  @media (prefers-color-scheme: dark) {
+    --background-color: var(--color-black);
+    --text-color: var(--color-white);
+  }
+}

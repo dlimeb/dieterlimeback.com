@@ -1,14 +1,17 @@
-/* 
-This is the main SCSS file which kicks off the compile -- it's imported from
-inside assets/js/index.js so webpack can do it's thing. Import other SCSS files
-(however you want to organize them) from here.
-*/
-$var: white;
+/*-------------------------------------------------------------------------------
 
-html {
-  font-family: sans-serif;
-  background: $var;
-}
+  index.scss
 
-@import "typography";
+  This is the main SCSS file that kicks off the compile -- it's imported from
+  inside assets/js/index.js so webpack can do it's thing. Import other SCSS
+  files from here.
+
+-------------------------------------------------------------------------------*/
+
+@import "reset";
+@import "variables";
 @import "utilities";
+@import "typography";
+@import "components";
+@import "layout";
+@import "pages";

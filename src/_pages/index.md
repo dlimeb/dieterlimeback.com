@@ -1,6 +1,6 @@
 ---
-title: Something
 layout: base
+meta_title: Welcome
 ---
 
 # Hello, world

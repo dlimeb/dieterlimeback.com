@@ -1,8 +1,10 @@
 {
     "name": "Dieter Limeback",
     "url": "https://dieterlimeback.com",
-    "author": {
-        "name": "Dieter Limeback",
-        "handle": "@dlimeb"
+    "social": {
+        "twitter": {
+            "name": "Dieter Limeback",
+            "handle": "@dlimeb"
+        }
     }
 }

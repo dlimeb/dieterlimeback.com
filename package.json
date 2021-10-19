@@ -1,7 +1,6 @@
 {
-  "name": "elf",
+  "name": "dieterlimeback",
   "version": "1.0.0",
-  "description": "An Eleventy starter kit",
   "main": ".eleventy.js",
   "scripts": {
     "build:assets": "webpack --config webpack.config.prod.js",
@@ -16,14 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/stowball/elf.git"
+    "url": "https://github.com/dlimeb/dieterlimeback.git"
   },
-  "author": "Matt Stow",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stowball/elf/issues"
-  },
-  "homepage": "https://github.com/stowball/elf#readme",
+  "author": "Dieter Limeback",
+  "license": "",
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",

@@ -2,59 +2,83 @@
 
     TYPOGRAPHY
 
+    Styling for all forms of text.
+
 -------------------------------------------------------------------------------*/
+
+$font-base-size: 137.5%; // 22px
+$letter-spacing: -0.04em;
 
 /**
  * BASE TYPOGRAPHY
  * Defaults for font definition, sizing, etc
  */
+html {
+  font-size: $font-base-size;
+}
+
 body {
+  font-family: var(--font-serif);
   color: var(--text-color);
 }
 
 
 /**
- * TYPESET
- * Styling for classnames provided by https://github.com/davidmerfield/Typeset
+ * RAW ELEMENTS
+ * Styling for headers, paragraphs, lists, etc
  */
-// Small capitals
+// HEADERS
+h1 {
+  font-size: var(--font-size-3xl);
+}
+h2 {
+  font-size: var(--font-size-2xl);
+}
+h3 {
+  font-size: var(--font-size-xl);
+}
+h4 {
+  font-size: var(--font-size-base);
+}
+
+// PARAGRAPHS
+p {
+  font-size: var(--font-size-base);
+  letter-spacing: $letter-spacing;
+}
+
+// LINKS
+a {}
+
+// LISTS
+ul {}
+ol {}
+li {
+  letter-spacing: $letter-spacing;
+}
+
+// BLOCKQUOTES
+blockquote {}
+
+// STYLED TEXT
+small,
+figcaption {
+  font-size: var(--font-size-sm);
+}
+em {
+  font-style: italic;
+  letter-spacing: -0.025em;
+}
+strong {
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+
+// Classnames provided by https://github.com/davidmerfield/Typeset
 .small-caps {
   font-variant: small-caps;
+  font-size: var(--font-size-sm);
 }
-
-// Optical margin alignment for particular letters
-.pull-T,
-.pull-V,
-.pull-W,
-.pull-Y {
-  margin-left: -0.07em;
-}
-.push-T,
-.push-V,
-.push-W,
-.push-Y {
-  margin-right: 0.07em;
-}
-.pull-O,
-.pull-C,
-.pull-o,
-.pull-c {
-  margin-left: -0.04em;
-}
-.push-O,
-.push-C,
-.push-o,
-.push-c {
-  margin-right: 0.04em;
-}
-.pull-A {
-  margin-left: -0.03em;
-}
-.push-A {
-  margin-right: 0.03em;
-}
-
-// Quotation marks
 .pull-single {
   margin-left:-.27em;
 }

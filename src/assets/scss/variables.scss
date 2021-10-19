@@ -2,18 +2,31 @@
 
     VARIABLES
 
--------------------------------------------------------------------------------*/
+    Atomic definitions for type, colour, etc.
 
+-------------------------------------------------------------------------------*/
 
 :root {
 
-  // Typography
-  --font-serif: serif;
+  // Font definitions
+  --font-serif: "Spectral", Georgia, Times, serif;
   --font-mono: monospaced;
 
+  // Font scale
+  --font-size-xs: 0.64rem;
+  --font-size-sm: 0.85rem;
+  --font-size-md: 1rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.56rem;
+  --font-size-2xl: 1.95rem;
+  --font-size-3xl: 2.44rem;
+  --font-size-4xl: 3.05rem;
+  --font-size-5xl: 3.81rem;
+
   // Colour palette
-  --color-black: black;
-  --color-white: white;
+  --color-black: #333;
+  --color-white: #f4f4f4;
 
   // Light/dark mode
   @media (prefers-color-scheme: light) {

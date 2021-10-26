@@ -9,10 +9,10 @@
 :root {
 
   // Font definitions
-  --font-serif: "Spectral", Georgia, Times, serif;
+  --font-serif: "Source Serif Pro", Georgia, Times, serif;
   --font-mono: monospaced;
 
-  // Font scale
+  // Font scale and spacing
   --font-size-xs: 0.64rem;
   --font-size-sm: 0.85rem;
   --font-size-md: 1rem;
@@ -23,6 +23,10 @@
   --font-size-3xl: 2.44rem;
   --font-size-4xl: 3.05rem;
   --font-size-5xl: 3.81rem;
+  --font-letter-spacing: -0.03em;
+  // --font-leading-tight: 1;
+  --font-leading-normal: 1.5;
+  // --font-leading-loose: 2;
 
   // Colour palette
   --color-black: #333;

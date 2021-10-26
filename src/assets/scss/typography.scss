@@ -5,9 +5,7 @@
     Styling for all forms of text.
 
 -------------------------------------------------------------------------------*/
-
 $font-base-size: 137.5%; // 22px
-$letter-spacing: -0.04em;
 
 /**
  * BASE TYPOGRAPHY
@@ -18,8 +16,9 @@ html {
 }
 
 body {
-  font-family: var(--font-serif);
   color: var(--text-color);
+  font-family: var(--font-serif);
+  line-height: var(--font-leading-normal);
 }
 
 
@@ -44,7 +43,7 @@ h4 {
 // PARAGRAPHS
 p {
   font-size: var(--font-size-base);
-  letter-spacing: $letter-spacing;
+  margin-bottom: calc(var(--font-leading-normal) * 1em);
 }
 
 // LINKS
@@ -53,9 +52,7 @@ a {}
 // LISTS
 ul {}
 ol {}
-li {
-  letter-spacing: $letter-spacing;
-}
+li {}
 
 // BLOCKQUOTES
 blockquote {}
@@ -67,11 +64,9 @@ figcaption {
 }
 em {
   font-style: italic;
-  letter-spacing: -0.025em;
 }
 strong {
   font-weight: bold;
-  letter-spacing: -0.025em;
 }
 
 // Classnames provided by https://github.com/davidmerfield/Typeset

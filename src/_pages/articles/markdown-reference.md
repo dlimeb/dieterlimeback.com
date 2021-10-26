@@ -24,11 +24,13 @@ A string with <span class="small-caps">SMALL CAPS</span> looks like this.
 > This is a quote. Which, in Markdown, is a blockquote.
 > — Person, 2021
 
+A string with ligatures like waffle, finance. And 1/4 the amount of work. 0, 1, 2, 3, 4, 5, 6. 1st 2nd 3rd
+
+<small>Small text is one step down from the base.</small>
+
 ---
 
 Literally you don't need `inline code blocks` or
-
-<small>Small text is one step down from the base.</small>
 
 ``` js
 // full code blocks

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ meta_title if meta_title else title }} • {{ site.name }}</title>
+    <title>{% if title %}{{ title }} • {% endif %}{{ site.name }}</title>
 
     <link rel="stylesheet" href="/assets/main.css?<%- cacheBust.mainCss %>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +19,16 @@
   </head>
 
   <body>
-  <body class="type-{{ layout | lower }} page-{{ page.fileSlug if page.fileSlug else 'home' }}">
+  <body class="type-{{ layout | lower }} page-{{ page.fileSlug if page.fileSlug != '_pages' else 'home' }}">
     <a class="sr-only" href="#main">Skip to content</a>
 
-    {% include "header.njk" %}
+    {# {% include "header.njk" %} #}
 
     <main id="main">
       {{ content | safe }}
     </main>
 
-    {% include "footer.njk" %}
+    {# {% include "footer.njk" %} #}
 
     <script src="/assets/vendor.js?<%- cacheBust.vendorJs %>"></script>
     <script src="/assets/main.js?<%- cacheBust.mainJs %>"></script>

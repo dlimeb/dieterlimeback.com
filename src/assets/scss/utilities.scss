@@ -7,6 +7,17 @@
 -------------------------------------------------------------------------------*/
 
 
+// Selection highlight
+// ::-moz-selection {
+//   color: #fff;
+//   background-color: blue;
+// }
+
+// ::selection {
+//   color: #fff;
+//   background-color: blue;
+// }
+
 // Hide visually, for screenreaders only
 .sr-only {
   position: absolute;
@@ -18,4 +29,16 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+// Remove all animations and transitions for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

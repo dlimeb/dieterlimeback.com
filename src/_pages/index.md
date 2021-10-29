@@ -1,8 +1,7 @@
 ---
 layout: full-page
-meta_title: Welcome
 ---
 
-# Hello, world
-
-Welcome to my website.
+<p class="hero">
+  Hello! I'm Dieter Limeback, a coach and designer. I help people and teams unlock their creativity and focus on what matters.
+</p>

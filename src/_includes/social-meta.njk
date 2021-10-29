@@ -2,14 +2,14 @@
 
 {# Open Graph #}
 <meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:title" content="{{ meta_title if meta_title else title }} | {{ site.name }}">
-<meta property="og:description" content="{{ meta_description | truncate(140) if meta_description else content | striptags | truncate(140) }}">
+<meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{ site.name }}">
+<meta property="og:description" content="{{ description | truncate(140) if description else content | striptags | truncate(140) }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 {# <meta property="og:image" content="{{ site.url }}{{ site.images.og }}"> #}
 
 {# Twitter #}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ meta_title if meta_title else title }} | {{ site.name }}">
-<meta name="twitter:description" content="{{ meta_description | truncate(140) if meta_description else content | striptags | truncate(140) }}">
+<meta name="twitter:title" content="{% if title %}{{ title }} • {% endif %}{{ site.name }}">
+<meta name="twitter:description" content="{{ description | truncate(140) if description else content | striptags | truncate(140) }}">
 <meta name="twitter:creator" content="{{ site.social.twitter.handle }}">
 {# <meta name="twitter:image" content="{{ site.url }}{{ site.images.og }}"> #}

@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: full-page
 meta_title: Welcome
 ---
 

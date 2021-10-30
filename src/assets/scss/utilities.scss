@@ -2,21 +2,20 @@
 
    UTILITIES
 
-   Helper classes.
+   Misc helper classes.
 
 -------------------------------------------------------------------------------*/
 
 
 // Selection highlight
-// ::-moz-selection {
-//   color: #fff;
-//   background-color: blue;
-// }
-
-// ::selection {
-//   color: #fff;
-//   background-color: blue;
-// }
+::-moz-selection {
+  color: #fff;
+  background-color: blue;
+}
+::selection {
+  color: #fff;
+  background-color: blue;
+}
 
 // Hide visually, for screenreaders only
 .sr-only {

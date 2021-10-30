@@ -9,30 +9,15 @@
 
 // Homepage
 .page-home {
-  margin: 0.96rem;
-  padding: calc(3 * 0.96rem) calc(2 * 0.96rem);
+  margin: 1rem;
+  padding: 1rem;
 }
-@media (min-width : 48em) {
-  .page-home {
-    margin: 1.872rem;
-    padding: calc(3 * 1.872rem) calc(2 * 1.872rem);
-  }
-}
-@media (min-width : 80em) {
-  .page-home {
-    margin: 3.66rem;
-    padding: calc(3 * 3.66rem) calc(2 * 3.66rem);
-  }
-}
+
 .hero {
-  font-size: var(--font-size-4xl);
-  letter-spacing: -0.015em;
   line-height: 1.1;
-  margin-bottom: 4.572rem;
-  max-width: 72rem;
-}
-@media (min-width : 64em) {
-  .hero {
-    font-size: var(--font-size-3xl);
+  max-width: 53rem;
+
+  @include breakpoint('lg') {
+    font-size: font-size('3xl');
   }
 }

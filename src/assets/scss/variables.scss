@@ -6,39 +6,63 @@
 
 -------------------------------------------------------------------------------*/
 
+/**
+ * TYPOGRAPHY
+ */
+$font-serif: "Spectral", serif;
+$font-mono: "Space Mono", monospaced;
+$font-leading: 1.5;
+$font-base-size: 137.5%; // 22px, which everything else is relative to
+$font-sizes: (
+  'xs': 0.64rem,
+  'sm': 0.85rem,
+  'md': 1rem,
+  'base': 1rem,
+  'lg': 1.25rem,
+  'xl': 1.56rem,
+  '2xl': 1.95rem,
+  '3xl': 2.44rem,
+  '4xl': 3rem,
+  '5xl': 3.81rem,
+);
+
+
+/**
+ * COLORS
+ */
+$colors: (
+  // sexy: #FA6ACC,
+  // glamour: #F02A52,
+  // sky: #09A6E4,
+  'black': #333,
+  'white': #fff
+);
+
+
+/**
+ * RESPONSIVE BREAKPOINTS
+ */
+$breakpoints: (
+  'xs': 360px,
+  'sm': 480px,
+  'md': 768px,
+  'lg': 960px,
+  'xl': 1200px,
+  '2xl': 1500px
+);
+
+
+/**
+ * LIGHT/DARK MODE
+ */
 :root {
-
-  // Font definitions
-  --font-serif: "Source Serif Pro", Georgia, Times, serif;
-  --font-mono: monospaced;
-
-  // Font scale and spacing
-  --font-size-xs: 0.64rem;
-  --font-size-sm: 0.85rem;
-  --font-size-md: 1rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.25rem;
-  --font-size-xl: 1.56rem;
-  --font-size-2xl: 1.95rem;
-  --font-size-3xl: 2.44rem;
-  --font-size-4xl: 3rem;
-  --font-size-5xl: 3.81rem;
-  --font-letter-spacing: -0.03em;
-  // --font-leading-tight: 1;
-  --font-leading-normal: 1.5;
-  // --font-leading-loose: 2;
-
-  // Colour palette
-  --color-black: #333;
-  --color-white: #fff;
-
-  // Light/dark mode
   @media (prefers-color-scheme: light) {
-    --background-color: var(--color-white);
-    --text-color: var(--color-black);
+    --background-color: color('white');
+    --text-color: color('black');
   }
+
   @media (prefers-color-scheme: dark) {
-    --background-color: var(--color-black);
-    --text-color: var(--color-white);
+    --background-color: color('black');
+    --text-color: color('white');
   }
 }

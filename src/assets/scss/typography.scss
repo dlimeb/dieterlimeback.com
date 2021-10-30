@@ -5,7 +5,6 @@
     Styling for all forms of text.
 
 -------------------------------------------------------------------------------*/
-$font-base-size: 137.5%; // 22px
 
 /**
  * BASE TYPOGRAPHY
@@ -17,8 +16,8 @@ html {
 
 body {
   color: var(--text-color);
-  font-family: var(--font-serif);
-  line-height: var(--font-leading-normal);
+  font-family: $font-serif;
+  line-height: $font-leading;
 }
 
 
@@ -28,22 +27,22 @@ body {
  */
 // HEADERS
 h1 {
-  font-size: var(--font-size-3xl);
+  font-size: font-size('3xl');
 }
 h2 {
-  font-size: var(--font-size-2xl);
+  font-size: font-size('2xl');
 }
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: font-size('xl');
 }
 h4 {
-  font-size: var(--font-size-base);
+  font-size: font-size('base');
 }
 
 // PARAGRAPHS
 p {
-  font-size: var(--font-size-base);
-  margin-bottom: calc(var(--font-leading-normal) * 1em);
+  font-size: font-size('base');
+  margin-bottom: calc($font-leading * 1em);
 }
 
 // LINKS
@@ -60,7 +59,7 @@ blockquote {}
 // STYLED TEXT
 small,
 figcaption {
-  font-size: var(--font-size-sm);
+  font-size: font-size('sm');
 }
 em {
   font-style: italic;
@@ -72,7 +71,7 @@ strong {
 // Classnames provided by https://github.com/davidmerfield/Typeset
 .small-caps {
   font-variant: small-caps;
-  font-size: var(--font-size-sm);
+  font-size: font-size('sm');
 }
 .pull-single {
   margin-left:-.27em;

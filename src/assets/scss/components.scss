@@ -5,3 +5,25 @@
     Styling for specific components (nav, forms, etc)
 
 -------------------------------------------------------------------------------*/
+
+header {
+  text-align: center;
+}
+
+.site-logo {
+  color: black;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: blue;
+  }
+
+  svg {
+    height: 27px;
+    width: 27px;
+
+    path {
+      fill: currentColor;
+    }
+  }
+}

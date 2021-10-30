@@ -31,10 +31,7 @@ $font-sizes: (
  * COLORS
  */
 $colors: (
-  // sexy: #FA6ACC,
-  // glamour: #F02A52,
-  // sky: #09A6E4,
-  'black': #333,
+  'black': #0a0f1a,
   'white': #fff
 );
 
@@ -57,12 +54,12 @@ $breakpoints: (
  */
 :root {
   @media (prefers-color-scheme: light) {
-    --background-color: color('white');
-    --text-color: color('black');
+    --background-color: #{color('white')};
+    --text-color: #{color('black')};
   }
 
   @media (prefers-color-scheme: dark) {
-    --background-color: color('black');
-    --text-color: color('white');
+    --background-color: #{color('black')};
+    --text-color: #{color('white')};
   }
 }

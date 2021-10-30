@@ -22,7 +22,7 @@
   <body class="type-{{ layout | lower }} page-{{ page.fileSlug if page.fileSlug != '_pages' else 'home' }}">
     <a class="sr-only" href="#main">Skip to content</a>
 
-    {# {% include "header.njk" %} #}
+    {% include "header.njk" %}
 
     <main id="main">
       {{ content | safe }}

@@ -8,16 +8,16 @@
 
 
 // Homepage
-.page-home {
-  margin: 1rem;
-  padding: 1rem;
-}
-
 .hero {
-  line-height: 1.1;
-  max-width: 53rem;
+  display: flex;
+  align-items: center;
+}
+.image {
+  margin-right: 3rem;
 
-  @include breakpoint('lg') {
-    font-size: font-size('3xl');
+  img {
+    width: 550px;
+    border-radius: 6px;
   }
+
 }

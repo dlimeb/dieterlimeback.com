@@ -6,13 +6,15 @@
 
 -------------------------------------------------------------------------------*/
 
-/**
+/*
  * TYPOGRAPHY
  */
 $font-serif: "Spectral", serif;
 $font-mono: "Space Mono", monospaced;
-$font-leading: 1.5;
-$font-base-size: 137.5%; // 22px, which everything else is relative to
+$font-leading-tight: 1;
+$font-leading: 1.4;
+$font-base-size: 150%; // 24px, which everything else is relative to
+$font-letter-spacing: -0.025em;
 $font-sizes: (
   'xs': 0.64rem,
   'sm': 0.85rem,
@@ -23,20 +25,22 @@ $font-sizes: (
   '2xl': 1.95rem,
   '3xl': 2.44rem,
   '4xl': 3rem,
-  '5xl': 3.81rem,
+  '5xl': 3.75rem,
 );
 
 
-/**
+/*
  * COLORS
  */
 $colors: (
-  'black': #0a0f1a,
-  'white': #fff
+  'action': #00f,
+  'action-light': #3060ff,
+  'white': #fff,
+  'black': #050e1f
 );
 
 
-/**
+/*
  * RESPONSIVE BREAKPOINTS
  */
 $breakpoints: (
@@ -49,17 +53,19 @@ $breakpoints: (
 );
 
 
-/**
+/*
  * LIGHT/DARK MODE
  */
 :root {
   @media (prefers-color-scheme: light) {
     --background-color: #{color('white')};
     --text-color: #{color('black')};
+    --action-color: #{color('action')};
   }
 
   @media (prefers-color-scheme: dark) {
     --background-color: #{color('black')};
     --text-color: #{color('white')};
+    --action-color: #{color('action-light')};
   }
 }

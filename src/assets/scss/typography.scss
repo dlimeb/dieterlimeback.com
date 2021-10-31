@@ -6,7 +6,7 @@
 
 -------------------------------------------------------------------------------*/
 
-/**
+/*
  * BASE TYPOGRAPHY
  * Defaults for font definition, sizing, etc
  */
@@ -21,13 +21,23 @@ body {
 }
 
 
-/**
+/*
  * RAW ELEMENTS
  * Styling for headers, paragraphs, lists, etc
  */
 // HEADERS
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  letter-spacing: $font-letter-spacing;
+  margin-bottom: #{$font-leading}rem;
+}
+
 h1 {
   font-size: font-size('3xl');
+  line-height: $font-leading-tight;
 }
 h2 {
   font-size: font-size('2xl');
@@ -42,7 +52,8 @@ h4 {
 // PARAGRAPHS
 p {
   font-size: font-size('base');
-  margin-bottom: calc($font-leading * 1em);
+  letter-spacing: $font-letter-spacing;
+  margin-bottom: #{$font-leading}rem;
 }
 
 // LINKS

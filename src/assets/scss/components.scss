@@ -6,8 +6,12 @@
 
 -------------------------------------------------------------------------------*/
 
+/*
+ * HEADER
+ */
 header {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .site-logo {
@@ -15,7 +19,7 @@ header {
   transition: color 0.2s ease;
 
   &:hover {
-    color: blue;
+    color: var(--action-color);
   }
 
   svg {

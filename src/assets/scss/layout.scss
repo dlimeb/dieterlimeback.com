@@ -6,7 +6,12 @@
 
 -------------------------------------------------------------------------------*/
 
-
 body {
   background-color: var(--background-color);
+  padding: 2rem;
+}
+
+.content {
+  width: 1380px;
+  margin: 0 auto;
 }

@@ -8,14 +8,14 @@
 
 
 // Selection highlight
-::-moz-selection {
-  color: #fff;
-  background-color: blue;
-}
-::selection {
-  color: #fff;
-  background-color: blue;
-}
+// ::-moz-selection {
+//   color: #fff;
+//   background-color: var(--action-color);
+// }
+// ::selection {
+//   color: #fff;
+//   background-color: var(--action-color);
+// }
 
 // Hide visually, for screenreaders only
 .sr-only {

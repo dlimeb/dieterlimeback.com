@@ -5,6 +5,7 @@ const cacheBust = () => {
   const files = {
     mainCss: './src/compiled-assets/main.css',
     mainJs: './src/compiled-assets/main.js',
+    // vendorJs: './src/compiled-assets/vendor.js',
   };
 
   return Object.entries(files).reduce((acc, [key, path]) => {

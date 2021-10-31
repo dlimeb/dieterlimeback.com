@@ -11,13 +11,28 @@
 .hero {
   display: flex;
   align-items: center;
-}
-.image {
-  margin-right: 3rem;
 
-  img {
-    width: 550px;
-    border-radius: 6px;
+  flex-direction: column;
+
+  @include breakpoint('xl') {
+    flex-direction: row;
   }
 
+  &__image {
+    margin-bottom: 2rem;
+
+    @include breakpoint('xl') {
+      margin-right: 3rem;
+      max-width: 550px;
+    }
+
+    img {
+      border-radius: 6px;
+    }
+  }
+
+  &__content {
+    max-width: 31rem;
+    hyphens: none;
+  }
 }

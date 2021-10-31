@@ -8,10 +8,16 @@
 
 body {
   background-color: var(--background-color);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .content {
-  width: 1380px;
   margin: 0 auto;
+
+  @include breakpoint('md') {
+    width: 600px;
+  }
+  @include breakpoint('xl') {
+    width: 1250px;
+  }
 }

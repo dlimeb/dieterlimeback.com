@@ -64,4 +64,13 @@ header {
   &:hover {
     color: var(--action-color);
   }
+
+  &.button--back {
+    &:before {
+      content: "← "
+    }
+    &:after {
+      content: "";
+    }
+  }
 }

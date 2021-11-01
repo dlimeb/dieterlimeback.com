@@ -36,3 +36,18 @@
     hyphens: none;
   }
 }
+
+// Contact
+.contact {
+  display: flex;
+  margin-top: 5rem;
+  padding-right: 1rem;
+
+  &__direct,
+  &__form {
+    width: 50%;
+  }
+}
+.schedule {
+  margin-top: 2rem;
+}

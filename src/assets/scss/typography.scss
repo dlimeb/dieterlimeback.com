@@ -24,6 +24,16 @@ body {
   line-height: $font-leading;
 }
 
+@mixin body-copy {
+  font-size: font-size('base');
+  letter-spacing: $font-letter-spacing;
+}
+
+@mixin mono-copy {
+  font-family: $font-mono;
+  font-size: font-size('xs');
+  letter-spacing: 0;
+}
 
 /*
  * RAW ELEMENTS
@@ -59,13 +69,22 @@ h4 {
 
 // PARAGRAPHS
 p {
-  font-size: font-size('base');
-  letter-spacing: $font-letter-spacing;
+  @include body-copy;
   margin-bottom: #{$font-leading}rem;
 }
 
 // LINKS
-a {}
+a {
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .17em;
+
+  &:hover {
+    color: var(--action-color);
+  }
+}
 
 // LISTS
 ul {}

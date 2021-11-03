@@ -5,7 +5,7 @@ description: Dieter Limeback is a certified coach who works with people and team
 
 <div class="hero">
   <div class="hero__image">
-    <img src="/images/dieter.jpg" alt="Photo of Dieter">
+    {% image "./src/images/dieter.jpg", "Photo of Dieter" %}
   </div>
 
   <div class="hero__content">

@@ -5,6 +5,9 @@
         "twitter": {
             "name": "Dieter Limeback",
             "handle": "@dlimeb"
+        },
+        "images": {
+            "og": "/images/og.jpg"
         }
     }
 }

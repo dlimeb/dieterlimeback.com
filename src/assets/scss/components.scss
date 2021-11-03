@@ -41,15 +41,28 @@ header {
 /*
  * BUTTONS
  */
-// .button--primary {
-//   color: #0a0f1a;
-//   background: #39E5F8;
-//   padding: 0.6em 1em;
-//   text-decoration: none;
-//   font-family: "Space Mono";
-//   font-size: 18px;
-//   letter-spacing: 0;
-// }
+.button--primary {
+  @include mono-copy;
+  background-color: var(--background-color);
+  padding: 1em 1.5em;
+  text-decoration: none;
+  line-height: 1;
+  border: 2px solid var(--text-color);
+  transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint('md') {
+    width: auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border-color: var(--action-color);
+    color: var(--action-color);
+  }
+}
 .button--plain {
   color: inherit;
   font-weight: bold;
@@ -72,5 +85,62 @@ header {
     &:after {
       content: "";
     }
+  }
+}
+.sm-icon {
+  display: inline-block;
+  width: 2rem;
+  color: var(--text-color);
+
+  path,
+  circle {
+    fill: currentColor;
+  }
+
+  &:hover {
+    &.twitter {
+      color: #1DA1F2;
+    }
+    &.instagram {
+      color: #cd486b;
+    }
+    &.linkedin {
+      color: #0072b1;
+    }
+  }
+}
+
+
+/*
+ * FORMS
+ */
+.form {
+  &__row {
+    margin-bottom: #{$font-leading}rem;
+  }
+  &__label {
+    display: block;
+    @include mono-copy;
+
+    sup {
+      font-size: 0.5rem;
+      padding-left: 0.3em;
+    }
+  }
+  &__input,
+  &__textarea {
+    background: var(--input-color);
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 0.5em 0.6em;
+
+    &:focus {
+      border-color: color('black');
+    }
+  }
+  ::placeholder {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.4;
   }
 }

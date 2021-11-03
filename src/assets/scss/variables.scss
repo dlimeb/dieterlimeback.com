@@ -9,16 +9,16 @@
 /*
  * TYPOGRAPHY
  */
-$font-serif: "Spectral", serif;
-$font-mono: "Space Mono", monospaced;
+$font-serif: 'Spectral', Georgia, 'Times New Roman', Times, serif;
+$font-mono: "IBM Plex Mono", monospaced;
 $font-leading-tight: 1;
 $font-leading: 1.4;
 $font-base-size-small: 137.5%; // 22px (mobile)
 $font-base-size: 150%; // 24px (desktop)
 $font-letter-spacing: -0.025em;
 $font-sizes: (
-  'xs': 0.64rem,
-  'sm': 0.85rem,
+  'xs': 0.75rem,
+  'sm': 0.9rem,
   'md': 1rem,
   'base': 1rem,
   'lg': 1.25rem,
@@ -35,8 +35,9 @@ $font-sizes: (
  */
 $colors: (
   'action': #00f,
-  'action-light': #3060ff,
+  'action-light': #5071ff,
   'white': #fff,
+  'gray': #f3f4f6,
   'black': #050e1f
 );
 
@@ -49,8 +50,8 @@ $breakpoints: (
   'sm': 480px,
   'md': 768px,
   'lg': 960px,
-  'xl': 1200px,
-  '2xl': 1500px
+  'xl': 1366px,
+  '2xl': 1920px
 );
 
 
@@ -62,6 +63,7 @@ $breakpoints: (
     --background-color: #{color('white')};
     --text-color: #{color('black')};
     --action-color: #{color('action')};
+    --input-color: #{color('gray')};
   }
 
   @media (prefers-color-scheme: dark) {

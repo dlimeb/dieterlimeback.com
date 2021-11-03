@@ -41,25 +41,27 @@ header {
 /*
  * BUTTONS
  */
-.button--primary,
-.button--secondary {
+.button--primary {
   @include mono-copy;
-  color: color('white');
-  background-color: var(--action-color);
-  padding: 1.2em 1.5em;
+  background-color: var(--background-color);
+  padding: 1em 1.5em;
   text-decoration: none;
   line-height: 1;
-  border: 0;
+  border: 2px solid var(--text-color);
   transition: all 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @include breakpoint('md') {
+    width: auto;
+  }
 
   &:hover {
-    color: color('white');
     cursor: pointer;
-    background-color: var(--text-color);
+    border-color: var(--action-color);
+    color: var(--action-color);
   }
-}
-.button--secondary {
-  background: var(--text-color);
 }
 .button--plain {
   color: inherit;
@@ -108,6 +110,7 @@ header {
   }
 }
 
+
 /*
  * FORMS
  */
@@ -129,7 +132,7 @@ header {
     background: var(--input-color);
     width: 100%;
     border: 1px solid transparent;
-    padding: 0.3em 0.6em;
+    padding: 0.5em 0.6em;
 
     &:focus {
       border-color: color('black');

@@ -11,6 +11,7 @@ body {
   padding: 1rem;
 }
 
+// Entire content area
 .content {
   margin: 0 auto;
 
@@ -20,4 +21,10 @@ body {
   @include breakpoint('xl') {
     width: 1280px;
   }
+}
+
+// Wrapper for minimal, narrow pages {
+.wrapper-narrow {
+  max-width: 900px;
+  margin: 0 auto;
 }

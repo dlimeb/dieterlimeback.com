@@ -11,11 +11,7 @@
  * Defaults for font definition, sizing, etc
  */
 html {
-  font-size: $font-base-size-small;
-
-  @include breakpoint('md') {
-    font-size: $font-base-size;
-  }
+  font-size: $font-base-size;
 }
 
 body {

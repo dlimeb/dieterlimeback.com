@@ -37,27 +37,3 @@
     hyphens: none;
   }
 }
-
-// Contact
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5rem;
-
-  @include breakpoint('xl') {
-    flex-direction: row;
-    padding-right: 1rem;
-  }
-
-  &__direct,
-  &__form {
-    width: 100%;
-
-    @include breakpoint('xl') {
-      width: 50%;
-    }
-  }
-}
-.schedule {
-  margin-top: 2rem;
-}

@@ -5,10 +5,9 @@ const typesetPlugin = require('eleventy-plugin-typeset');
 const Image = require("@11ty/eleventy-img");
 
 // Handle creating images in webp
+// https://www.11ty.dev/docs/plugins/image/
 async function imageShortcode(src, alt, sizes = "100vw") {
-  console.log(src);
   if(alt === undefined) {
-    // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
 

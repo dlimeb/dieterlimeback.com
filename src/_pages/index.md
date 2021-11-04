@@ -15,4 +15,3 @@ description: Dieter Limeback is a certified coach who works with people and team
     <p><a href="/contact/" class="button--plain">Book a complimentary intro session</a></p>
   </div>
 </div>
-

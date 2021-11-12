@@ -41,3 +41,11 @@
     scroll-behavior: auto !important;
   }
 }
+
+
+// Simple whitespace between content areas
+.vertical-spacing {
+  margin-top: $vertical-spacing;
+}
+
+// TODO Make a light spacing framework based on multiples of #{$font-leading}rem, similar to font-sizing

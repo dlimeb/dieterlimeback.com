@@ -3,7 +3,7 @@ layout: page
 description: Dieter Limeback is a certified coach who works with people and teams to unlock their creativity and focus on what matters.
 ---
 
-<div class="hero">
+<section class="hero">
   <div class="hero__image">
     {% image "./src/images/dieter.jpg", "Photo of Dieter" %}
   </div>
@@ -14,4 +14,14 @@ description: Dieter Limeback is a certified coach who works with people and team
     <p>Let's work together to discover how to see things differently and move forwards with confidence.</p>
     <p><a href="/contact/" class="button--plain">Book a complimentary intro session</a></p>
   </div>
-</div>
+</section>
+
+<section class="testimonial">
+  <div class="kicker">What clients say</div>
+  <blockquote>
+    <p class="testimonial__content">I went on a rollercoaster ride in my life in 2020. Work, life and emotions have never been so hard to manage. Dieter was there, listening, asking me about my feelings, acknowledging them. I was able to have more clear and vivid memories from things we would discuss that helped me focus on my own reflections to be better and love myself. I'm able to start a much more focused 2021 with more commitment to ME. I feel stronger.</p>
+    <p class="testimonial__source">
+      — G, Toronto
+    </p>
+  </blockquote>
+</section>

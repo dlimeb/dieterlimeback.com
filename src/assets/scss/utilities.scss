@@ -41,3 +41,9 @@
     scroll-behavior: auto !important;
   }
 }
+
+
+// Simple whitespace between content areas
+.vertical-spacing {
+  margin-top: vertical-spacing('xl');
+}

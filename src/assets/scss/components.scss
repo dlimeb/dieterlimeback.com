@@ -144,3 +144,47 @@ header {
     opacity: 0.4;
   }
 }
+
+
+/*
+ * KICKER
+ */
+ .kicker {
+   @include body-copy;
+   text-transform: uppercase;
+   font-size: font-size('xs');
+   font-weight: bold;
+   color: color('action');
+   margin-bottom: #{$font-leading}rem;
+ }
+
+
+/*
+ * TESTIMONIAL
+ */
+.testimonial {
+  text-align: center;
+  max-width: 40em;
+  margin: vertical-spacing('xl') auto;
+
+  &:before {
+    content: "“";
+    font-family: $font-serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: #CDD9E7;
+  }
+
+  &__content {
+   @include mono-copy;
+   font-style: italic;
+
+   @include breakpoint('xl') {
+    font-size: font-size('base');
+   }
+  }
+
+  &__source {
+
+  }
+}

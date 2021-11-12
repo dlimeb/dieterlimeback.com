@@ -50,6 +50,22 @@
   }
 
   @error "No value could be retrieved for `#{$key}`. "
-        + "Available colors are: #{map-keys($font-sizes)}.";
+        + "Available sizes are: #{map-keys($font-sizes)}.";
+  @return null;
+}
+
+
+// Convenient vertical space referencing. Requires $vertical-spacing defined in
+// variables.scss.
+//
+// Usage: vertical-spacing('xl');
+//
+@function vertical-spacing($key) {
+  @if map-has-key($vertical-spacing, $key) {
+    @return map-get($vertical-spacing, $key);
+  }
+
+  @error "No value could be retrieved for `#{$key}`. "
+        + "Available spacing is: #{map-keys($vertical-spacing)}.";
   @return null;
 }

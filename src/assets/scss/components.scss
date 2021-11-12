@@ -165,7 +165,7 @@ header {
 .testimonial {
   text-align: center;
   max-width: 40em;
-  margin: $vertical-spacing auto;
+  margin: vertical-spacing('xl') auto;
 
   &:before {
     content: "“";

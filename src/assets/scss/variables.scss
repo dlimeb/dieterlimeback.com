@@ -55,10 +55,17 @@ $breakpoints: (
 
 
 /*
- * GRID
+ * SPACING
  */
  $gutter-width: 2rem;
- $vertical-spacing: 4rem;
+
+ $vertical-spacing: (
+  'sm': calc(0.5 * #{$font-leading}rem),
+  'md': #{$font-leading}rem,
+  'lg': calc(2 * #{$font-leading}rem),
+  'xl': calc(4 * #{$font-leading}rem),
+  '2xl': calc(6 * #{$font-leading}rem),
+ );
 
 
 /*

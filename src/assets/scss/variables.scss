@@ -9,12 +9,12 @@
 /*
  * TYPOGRAPHY
  */
-$font-serif: 'Spectral', Georgia, 'Times New Roman', Times, serif;
+$font-sans: Inter, -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", Roboto, Helvetica, Arial, sans-serif;
+$font-serif: Georgia, 'Times New Roman', Times, serif;
 $font-mono: "IBM Plex Mono", monospaced;
 $font-leading-tight: 1;
 $font-leading: 1.4;
-$font-base-size: 137.5%; // 22px
-$font-letter-spacing: -0.025em;
+$font-base-size: 125%; // 20px
 $font-sizes: (
   'xs': 0.75rem,
   'sm': 0.9rem,

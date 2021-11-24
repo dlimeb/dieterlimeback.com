@@ -43,6 +43,7 @@ header {
  */
 .button--primary {
   @include mono-copy;
+  font-weight: 600;
   background-color: var(--background-color);
   padding: 1em 1.5em;
   text-decoration: none;
@@ -65,7 +66,7 @@ header {
 }
 .button--plain {
   color: inherit;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.2s ease;
   text-decoration-thickness: 2px;
   text-underline-offset: .17em;
@@ -153,7 +154,8 @@ header {
    @include body-copy;
    text-transform: uppercase;
    font-size: font-size('xs');
-   font-weight: bold;
+   letter-spacing: 0.05em;
+   font-weight: 900;
    color: color('action');
    margin-bottom: #{$font-leading}rem;
  }
@@ -185,6 +187,7 @@ header {
   }
 
   &__source {
-
+   @include mono-copy;
+   color: #64748B;
   }
 }

@@ -56,7 +56,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   // Nicer typography
-  eleventyConfig.addPlugin(typesetPlugin());
+  eleventyConfig.addPlugin(typesetPlugin({ disable: ['ligatures'] }));
 
   // Add shortcode for image creation
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

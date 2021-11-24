@@ -16,19 +16,18 @@ html {
 
 body {
   color: var(--text-color);
-  font-family: $font-serif;
+  font-family: $font-sans;
   line-height: $font-leading;
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin body-copy {
   font-size: font-size('base');
-  letter-spacing: $font-letter-spacing;
 }
 
 @mixin mono-copy {
   font-family: $font-mono;
-  font-size: font-size('xs');
-  letter-spacing: 0;
+  font-size: font-size('sm');
 }
 
 /*
@@ -40,12 +39,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: bold;
-  letter-spacing: $font-letter-spacing;
+  font-weight: 700;
   margin-bottom: #{$font-leading}rem;
+  letter-spacing: -0.02em;
 }
 
 h1 {
+  font-weight: 900;
   line-height: $font-leading-tight;
   hyphens: none;
   font-size: font-size('xl');
@@ -55,7 +55,7 @@ h1 {
   }
 }
 h2 {
-  margin-top: calc(2 * #{$font-leading}rem);
+  // margin-top: calc(2 * #{$font-leading}rem);
   font-size: font-size('lg');
 }
 h3 {
@@ -71,7 +71,7 @@ p {
 // LINKS
 a {
   color: inherit;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.2s ease;
   text-decoration-thickness: 2px;
   text-underline-offset: .17em;
@@ -96,11 +96,9 @@ figcaption {
 }
 em {
   font-style: italic;
-  letter-spacing: -0.01em;
 }
 strong {
-  font-weight: bold;
-  letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 // Classnames provided by https://github.com/davidmerfield/Typeset

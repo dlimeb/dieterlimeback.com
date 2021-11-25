@@ -14,7 +14,7 @@ $font-serif: Georgia, 'Times New Roman', Times, serif;
 $font-mono: "IBM Plex Mono", monospaced;
 $font-leading-tight: 1;
 $font-leading: 1.4;
-$font-base-size: 125%; // 20px
+$font-base-size: 112.5%; // 18px
 $font-sizes: (
   'xs': 0.75rem,
   'sm': 0.9rem,
@@ -32,12 +32,28 @@ $font-sizes: (
 /*
  * COLORS
  */
+
+ /* #303e59
+ */
 $colors: (
-  'action': #00f,
-  'action-light': #5071ff,
   'white': #fff,
-  'gray': #f3f4f6,
-  'black': #050e1f
+  'black': #0d1016,
+
+  'slate-900': #222932,
+  'slate-700': #333a4f,
+  'slate-500': #6B7280,
+  'slate-300': #E2E8F0,
+  'slate-100': #F8FAFC,
+
+  'sky-blue-200': #b4e7ff,
+  'sky-blue-300': #91dafd,
+
+  // 'action': #00f,
+  // 'action-light': #5071ff,
+
+
+  // 'gray': #f3f4f6,
+
 );
 
 
@@ -74,14 +90,17 @@ $breakpoints: (
 :root {
   @media (prefers-color-scheme: light) {
     --background-color: #{color('white')};
-    --text-color: #{color('black')};
-    --action-color: #{color('action')};
-    --input-color: #{color('gray')};
+    --background-color-faded: #{color('slate-100')};
+    --text-color: #{color('slate-700')};
+    --text-color-bold: #{color('black')};
+    --text-color-faded: #{color('slate-500')};
+    --action-color: #{color('sky-blue-200')};
+    // --input-color: #{color('gray')};
   }
 
   @media (prefers-color-scheme: dark) {
-    --background-color: #{color('black')};
-    --text-color: #{color('white')};
-    --action-color: #{color('action-light')};
+    // --background-color: #{color('black')};
+    // --text-color: #{color('white')};
+    // --action-color: #{color('action-light')};
   }
 }

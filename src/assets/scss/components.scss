@@ -24,7 +24,7 @@ header {
   transition: color 0.2s ease;
 
   &:hover {
-    color: var(--action-color);
+    // color: var(--action-color);
   }
 
   svg {
@@ -60,23 +60,26 @@ header {
 
   &:hover {
     cursor: pointer;
-    border-color: var(--action-color);
-    color: var(--action-color);
   }
 }
 .button--plain {
-  color: inherit;
-  font-weight: 600;
-  transition: color 0.2s ease;
-  text-decoration-thickness: 2px;
-  text-underline-offset: .17em;
+  color: var(--text-color-contrast);
+  font-weight: 500;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  box-shadow: inset 0 -0.3em var(--action-color);
 
   &:after {
     content: " →";
+    transition: all 0.25s ease;
   }
 
   &:hover {
-    color: var(--action-color);
+    box-shadow: inset 0 -0.5em var(--action-color);
+
+    &:after {
+      margin-left: 4px;
+    }
   }
 
   &.button--back {
@@ -152,12 +155,9 @@ header {
  */
  .kicker {
    @include body-copy;
-   text-transform: uppercase;
-   font-size: font-size('xs');
-   letter-spacing: 0.05em;
-   font-weight: 900;
-   color: color('action');
-   margin-bottom: #{$font-leading}rem;
+   @include body-copy-bold;
+   font-size: font-size('base');
+   margin: 0 auto vertical-spacing('md');
  }
 
 
@@ -174,20 +174,34 @@ header {
     font-family: $font-serif;
     font-size: 6rem;
     line-height: 1;
-    color: #CDD9E7;
+    color: color('slate-300');
   }
 
   &__content {
-   @include mono-copy;
-   font-style: italic;
+    @include mono-copy;
+    font-style: italic;
 
-   @include breakpoint('xl') {
-    font-size: font-size('base');
-   }
+    @include breakpoint('xl') {
+      font-size: font-size('base');
+    }
   }
 
   &__source {
-   @include mono-copy;
-   color: #64748B;
+    @include mono-copy;
+    color: var(--text-color-faded);
   }
+}
+
+
+/*
+ * FOOTER
+ */
+.footer {
+  margin-top: vertical-spacing('xl');
+  text-align: center;
+}
+
+.newsletter-signup {
+  background-color: var(--background-color-faded);
+  padding: vertical-spacing('md') $gutter-width;
 }

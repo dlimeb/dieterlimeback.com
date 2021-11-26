@@ -14,10 +14,10 @@ $font-serif: Georgia, 'Times New Roman', Times, serif;
 $font-mono: "IBM Plex Mono", monospaced;
 $font-leading-tight: 1;
 $font-leading: 1.4;
-$font-base-size: 125%; // 20px
+$font-base-size: 112.5%; // 18px
 $font-sizes: (
-  'xs': 0.75rem,
-  'sm': 0.9rem,
+  'xs': 0.65rem,
+  'sm': 0.85rem,
   'md': 1rem,
   'base': 1rem,
   'lg': 1.25rem,
@@ -32,12 +32,20 @@ $font-sizes: (
 /*
  * COLORS
  */
+
+ /* #303e59
+ */
 $colors: (
-  'action': #00f,
-  'action-light': #5071ff,
   'white': #fff,
-  'gray': #f3f4f6,
-  'black': #050e1f
+  'gray-100': #F3F4F6,
+  'gray-300': #D1D5DB,
+  'gray-400': #9CA3AF,
+  'gray-500': #64748B,
+  'gray-700': #374151,
+  'gray-900': #111827,
+
+  'sky-blue-200': #b4e7ff,
+  'sky-blue-700': #0369A1,
 );
 
 
@@ -74,14 +82,29 @@ $breakpoints: (
 :root {
   @media (prefers-color-scheme: light) {
     --background-color: #{color('white')};
-    --text-color: #{color('black')};
-    --action-color: #{color('action')};
-    --input-color: #{color('gray')};
+    --background-color-faded: #{color('gray-100')};
+
+    --text-color: #{color('gray-700')};
+    --text-color-bold: #{color('gray-900')};
+    --text-color-faded: #{color('gray-500')};
+    --text-color-inverted: #{color('gray-100')};
+
+    --action-color: #{color('sky-blue-200')};
+
+    --input-border-color: #{color('gray-400')};
   }
 
   @media (prefers-color-scheme: dark) {
-    --background-color: #{color('black')};
-    --text-color: #{color('white')};
-    --action-color: #{color('action-light')};
+    --background-color: #{color('gray-900')};
+    --background-color-faded: #{color('gray-700')};
+
+    --text-color: #{color('gray-300')};
+    --text-color-bold: #{color('white')};
+    --text-color-faded: #{color('gray-400')};
+    --text-color-inverted: #{color('gray-700')};
+
+    --action-color: #{color('sky-blue-700')};
+
+    --input-border-color: #{color('gray-500')};
   }
 }

@@ -17,7 +17,7 @@ description: Dieter Limeback is a certified coach who works with people and team
 </section>
 
 <section class="testimonial">
-  <h2 class="kicker">What clients say</h2>
+  <h2>What clients say</h2>
   <blockquote>
     <p class="testimonial__content">I went on a rollercoaster ride in my life in 2020. Work, life and emotions have never been so hard to manage. Dieter was there, listening, asking me about my feelings, acknowledging them. I was able to have more clear and vivid memories from things we would discuss that helped me focus on my own reflections to be better and love myself. I'm able to start a much more focused 2021 with more commitment to ME. I feel stronger.</p>
     <p class="testimonial__source">

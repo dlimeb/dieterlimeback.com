@@ -201,17 +201,13 @@ textarea {
 .fine-print {
   margin-top: vertical-spacing('2xl');
 
-  p,
-  li {
-    font-size: font-size('sm');
-  }
-
   ul {
     margin: 0 0 #{$font-leading}rem;
     padding: 0;
   }
 
   li {
+    font-size: font-size('sm');
     list-style: none;
     display: inline-block;
 

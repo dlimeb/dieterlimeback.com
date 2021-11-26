@@ -2,10 +2,10 @@
 layout: page
 title: Privacy Policy
 width: narrow
+newsletter: false
 ---
 
 # {{ title }}
-
 
 Dieter Limeback (“**Company**,” “**we**,” or “**us**”) respects your privacy and is committed to protecting it through this Privacy Policy.
 
@@ -140,17 +140,18 @@ We require only the information that is reasonably required to enter into a cont
 
 The Company employs the following party as its representative for handling General Data Protection Regulation issues.
 
-Dieter Limeback
-140 Eileen Ave, Toronto ON, M6N 1W1, Canada
+<address>
+Dieter Limeback<br>
+140 Eileen Ave, Toronto ON, M6N 1W1, Canada<br>
 Email: privacy@dieterlimeback.com
+</address>
 
 
 ## Contact Us
 
 The Company welcomes your questions or comments regarding the Privacy Policy:
 
-Dieter Limeback
-
+Dieter Limeback<br>
 Email Address: privacy@dieterlimeback.com
 
 _Effective as of November 6, 2021_

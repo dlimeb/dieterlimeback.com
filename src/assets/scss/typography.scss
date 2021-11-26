@@ -24,15 +24,19 @@ body {
 @mixin body-copy {
   font-size: font-size('base');
 }
-@mixin body-copy-bold {
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
 @mixin mono-copy {
   font-family: $font-mono;
   font-size: font-size('sm');
 }
+@mixin bold {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+@mixin link {
+  color: var(--text-color-bold);
+  text-decoration: none;
+}
+
 
 /*
  * RAW ELEMENTS
@@ -40,30 +44,32 @@ body {
  */
 // HEADERS
 h1,
-h2,
-h3,
-h4 {
-  font-weight: 700;
+h2 {
   margin-bottom: #{$font-leading}rem;
-  letter-spacing: -0.02em;
+  color: var(--text-color-bold);
 }
 
 h1 {
   font-weight: 400;
-  line-height: $font-leading-tight;
   hyphens: none;
   font-size: font-size('xl');
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-bottom: calc(2 * #{$font-leading}rem);
 
-  @include breakpoint('xl') {
-    font-size: font-size('2xl');
-  }
+  // @include breakpoint('xl') {
+  //   font-size: font-size('2xl');
+  // }
 }
 h2 {
-  // margin-top: calc(2 * #{$font-leading}rem);
-  font-size: font-size('lg');
-}
-h3 {
-  font-size: font-size('base');
+  @include body-copy;
+  @include bold;
+  margin-top: calc(2 * #{$font-leading}rem);
+
+  .newsletter-signup &,
+  .page-home & {
+    margin-top: 0;
+  }
 }
 
 // PARAGRAPHS
@@ -74,14 +80,15 @@ p {
 
 // LINKS
 a {
-  color: inherit;
-  font-weight: 600;
-  transition: color 0.2s ease;
-  text-decoration-thickness: 2px;
+  color: var(--text-color-bold);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration-thickness: 1px;
   text-underline-offset: .17em;
 
   &:hover {
-    // color: var(--action-color);
+    opacity: 0.7;
+    // color: var(--text-color);
   }
 }
 
@@ -102,7 +109,7 @@ em {
   font-style: italic;
 }
 strong {
-  font-weight: 700;
+  @include bold;
 }
 
 // Classnames provided by https://github.com/davidmerfield/Typeset

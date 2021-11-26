@@ -61,3 +61,11 @@ body {
     }
   }
 }
+
+
+/*
+ * SIMPLE SPACING
+ */
+.vertical-spacing {
+  margin-top: vertical-spacing('xl');
+}

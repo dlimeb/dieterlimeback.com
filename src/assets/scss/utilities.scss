@@ -7,16 +7,6 @@
 -------------------------------------------------------------------------------*/
 
 
-// Selection highlight
-// ::-moz-selection {
-//   color: #fff;
-//   background-color: var(--action-color);
-// }
-// ::selection {
-//   color: #fff;
-//   background-color: var(--action-color);
-// }
-
 // Hide visually, for screenreaders only
 .sr-only {
   position: absolute;
@@ -40,10 +30,4 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-
-// Simple whitespace between content areas
-.vertical-spacing {
-  margin-top: vertical-spacing('xl');
 }

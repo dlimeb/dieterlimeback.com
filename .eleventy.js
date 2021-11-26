@@ -1,7 +1,5 @@
 const htmlmin = require('html-minifier');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
-const typesetPlugin = require('eleventy-plugin-typeset');
 const Image = require("@11ty/eleventy-img");
 
 // Handle creating images in webp
@@ -51,12 +49,6 @@ module.exports = function(eleventyConfig) {
 
   // Generate Atom XML feed
   eleventyConfig.addPlugin(pluginRss);
-
-  // Lint for inclusive language
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
-
-  // Nicer typography
-  eleventyConfig.addPlugin(typesetPlugin({ disable: ['ligatures'] }));
 
   // Add shortcode for image creation
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);

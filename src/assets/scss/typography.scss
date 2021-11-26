@@ -48,7 +48,6 @@ h2 {
   margin-bottom: #{$font-leading}rem;
   color: var(--text-color-bold);
 }
-
 h1 {
   font-weight: 400;
   hyphens: none;
@@ -56,10 +55,6 @@ h1 {
   letter-spacing: -0.01em;
   line-height: 1;
   margin-bottom: calc(2 * #{$font-leading}rem);
-
-  // @include breakpoint('xl') {
-  //   font-size: font-size('2xl');
-  // }
 }
 h2 {
   @include body-copy;
@@ -91,14 +86,6 @@ a {
   }
 }
 
-// LISTS
-ul {}
-ol {}
-li {}
-
-// BLOCKQUOTES
-blockquote {}
-
 // STYLED TEXT
 small,
 figcaption {
@@ -109,28 +96,4 @@ em {
 }
 strong {
   @include bold;
-}
-
-// Classnames provided by https://github.com/davidmerfield/Typeset
-.small-caps {
-  font-variant: small-caps;
-  font-size: font-size('sm');
-}
-.pull-single {
-  margin-left:-.27em;
-}
-.push-single {
-  margin-right:.27em;
-}
-.pull-double,
-.push-double,
-.pull-single,
-.push-single {
-  display: inline-block;
-}
-.pull-double {
-  margin-left:-.46em;
-}
-.push-double {
-  margin-right:.46em;
 }

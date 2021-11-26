@@ -133,7 +133,8 @@ textarea {
   width: 100%;
   border: 1px solid var(--input-border-color);
   background-color: var(--background-color);
-  padding: 0.6em;
+  padding: 1em;
+  line-height: 1;
   border-radius: 4px;
 }
 ::placeholder {
@@ -189,17 +190,24 @@ textarea {
   margin-bottom: vertical-spacing('lg');
 
   form {
-    width: 450px;
     margin: 0 auto;
-    display: flex;
+
+    @include breakpoint('xl') {
+      max-width: 600px;
+      display: flex;
+    }
   }
   input {
-    border-radius: 4px 0 0 4px;
-    border-right-width: 0;
+    width: 100%;
+    margin: 8px 0;
+    display: block;
+
+    @include breakpoint('xl') {
+      border-radius: 4px 0 0 4px;
+      border-right-width: 0;
+    }
   }
   .button--primary {
-    border-radius: 0 4px 4px 0;
-    border: 0;
     background-color: var(--text-color);
     color: var(--text-color-inverted);
 
@@ -207,6 +215,10 @@ textarea {
       background-color: var(--text-color-bold);
     }
 
+    @include breakpoint('xl') {
+      border-radius: 0 4px 4px 0;
+      max-width: 10rem;
+    }
   }
 }
 

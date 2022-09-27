@@ -2,7 +2,6 @@
 layout: page
 title: Disclaimer
 width: narrow
-newsletter: false
 ---
 
 # {{ title }}

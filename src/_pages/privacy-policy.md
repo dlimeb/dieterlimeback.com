@@ -2,7 +2,6 @@
 layout: page
 title: Privacy Policy
 width: narrow
-newsletter: false
 ---
 
 # {{ title }}

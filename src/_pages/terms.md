@@ -2,7 +2,6 @@
 layout: page
 title: Terms of Use
 width: narrow
-newsletter: false
 ---
 
 # {{ title }}

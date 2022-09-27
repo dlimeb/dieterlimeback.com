@@ -160,44 +160,6 @@ textarea {
   text-align: center;
 }
 
-.newsletter-signup {
-  background-color: var(--background-color-faded);
-  padding: vertical-spacing('lg') $gutter-width;
-  margin-bottom: vertical-spacing('lg');
-
-  form {
-    margin: 0 auto;
-
-    @include breakpoint('xl') {
-      max-width: 600px;
-      display: flex;
-    }
-  }
-  input {
-    width: 100%;
-    margin: 8px 0;
-    display: block;
-
-    @include breakpoint('xl') {
-      border-radius: 4px 0 0 4px;
-      border-right-width: 0;
-    }
-  }
-  .button--primary {
-    background-color: var(--text-color);
-    color: var(--text-color-inverted);
-
-    &:hover {
-      background-color: var(--text-color-bold);
-    }
-
-    @include breakpoint('xl') {
-      border-radius: 0 4px 4px 0;
-      max-width: 10rem;
-    }
-  }
-}
-
 .fine-print {
   margin-top: vertical-spacing('2xl');
 

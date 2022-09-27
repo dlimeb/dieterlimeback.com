@@ -61,7 +61,6 @@ h2 {
   @include bold;
   margin-top: calc(2 * #{$font-leading}rem);
 
-  .newsletter-signup &,
   .page-home & {
     margin-top: 0;
   }

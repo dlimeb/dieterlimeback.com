@@ -1,5 +1,4 @@
 // Makes Sass faster!
-const Fiber = require('fibers');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
@@ -42,7 +41,6 @@ module.exports = {
               // eslint-disable-next-line global-require
               implementation: require('sass'),
               sassOptions: {
-                fiber: Fiber,
                 outputStyle: 'expanded',
               },
             },

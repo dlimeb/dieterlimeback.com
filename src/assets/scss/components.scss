@@ -149,34 +149,3 @@ textarea {
     color: var(--text-color-faded);
   }
 }
-
-
-/*
- * FOOTER
- */
-.footer {
-  margin-top: vertical-spacing('xl');
-  text-align: center;
-}
-
-.fine-print {
-  margin-top: vertical-spacing('2xl');
-
-  ul {
-    margin: 0 0 #{$font-leading}rem;
-    padding: 0;
-  }
-
-  li {
-    font-size: font-size('sm');
-    list-style: none;
-    display: inline-block;
-
-    &:after {
-      content: "•";
-    }
-    &:last-child:after {
-      content: "";
-    }
-  }
-}

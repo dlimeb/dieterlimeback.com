@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-  // Our "entry" point
+  // Our "entry" point - index.scss is imported from here
   entry: './src/assets/js/index.js',
   output: {
     // The global variable name any `exports` from `index.js` will be available at

@@ -1,21 +1,9 @@
-/*-------------------------------------------------------------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  index.scss
-
-  This is the main SCSS file that kicks off the compile -- it's imported from
-  inside assets/js/index.js so webpack can do its thing. Import other SCSS
-  files from here.
-
--------------------------------------------------------------------------------*/
-
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
-
-@import "reset";
 @import "functions";
 @import "variables";
-@import "utilities";
 @import "typography";
 @import "components";
 @import "layout";

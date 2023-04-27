@@ -20,7 +20,7 @@
 
   </head>
 
-  <body class="motion-safe type-{{ layout | lower }} page-{{ page.fileSlug if page.fileSlug != '_pages' else 'home' }}">
+  <body class="motion-safe container type-{{ layout | lower }} page-{{ page.fileSlug if page.fileSlug != '_pages' else 'home' }}">
     <a class="sr-only" href="#main">Skip to content</a>
 
     {% if header != false %}

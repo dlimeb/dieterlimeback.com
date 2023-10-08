@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		{#- title & description #}
+    <title>{% if title %}{{ title }} • {% endif %}{{ metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+		<meta name="generator" content="{{ eleventy.generator }}">
+
+    {#- favicons #}
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/assets/favicon/favicon.svg">
+    <link rel="mask-icon" href="/assets/favicon/mask-icon.svg" color="#6D28D9">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+
+		{#- feeds #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+		{#- styling #}
+		{%- css %}{% include "assets/css/index.css" %}{% endcss %}
+		<style>{% getBundle "css" %}</style>
+
+		{#- social #}
+		<meta property="og:site_name" content="{{ metadata.name }}">
+    <meta property="og:title" content="{% if title %}{{ title }} • {% endif %}{{ metadata.title }}">
+    <meta property="og:description" content="{{ description | truncate(140) if description else content | striptags | truncate(140) }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+	</head>
+
+	<body>
+		<a href="#main" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			{# <a href="/" class="home-link">{{ metadata.title }}</a> #}
+			<h1 id="title">{{ title }}</h1>
+		</header>
+
+		<main id="main" aria-labelledby="title">
+			{{ content | safe }}
+		</main>
+
+		<footer role="contentinfo">
+			© 2023, Dieter Limeback.
+			<ul>
+				<li class="inline-block mx-1">
+					<a href="/privacy-policy/">Privacy</a>
+				</li>
+				<li class="inline-block mx-1">
+					<a href="/terms/">Terms</a>
+				</li>
+				<li class="inline-block mx-1">
+					<a href="/disclaimer/">Disclaimer</a>
+				</li>
+			</ul>
+		</footer>
+
+	</body>
+</html>

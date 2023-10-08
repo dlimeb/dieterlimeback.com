@@ -1,3 +1,0 @@
-{
-  "permalink": "{{ page.filePathStem | replace('/_pages', '') | replace('/index', '') }}/index.html"
-}

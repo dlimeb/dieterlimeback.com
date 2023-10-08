@@ -1,6 +1,7 @@
-/dist/
-/node_modules/
-/src/compiled-assets/
+_site/
+tmp/
+node_modules/
+package-lock.json
 
 .DS_Store
 Thumbs.db
